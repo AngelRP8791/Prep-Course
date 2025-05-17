@@ -1,0 +1,749 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyObSnyp3vzFUwEPots9VDsu",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AngelRP8791/Prep-Course/blob/main/Curso%20Python%20para%20ciencia%20de%20datos%20Clase%205\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "F0g15M8EaRpi",
+        "outputId": "ea56e2fa-b116-4ef9-f792-1e58f19847ac"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'str'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(type(\"Hola\")) #Función type: identifica el tipo de datos"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(16))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "azxnMj0-bea9",
+        "outputId": "a98bdb8a-ea1d-42b2-b3c7-e9914bf1ac73"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(3.4))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "l7Z2wbHWbnRr",
+        "outputId": "7cb34ba5-2bcc-46d3-d7cf-06eb948a02fa"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(True))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_mYo-uXcbp-K",
+        "outputId": "798bb53c-3a2f-4dc8-9663-5d28a08eefd3"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'bool'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre = \"Luis\"\n",
+        "print(type(nombre))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OplORWIbb0Wg",
+        "outputId": "4b633926-7c26-40d1-c278-8673014cbe08"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'str'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "edad = 30\n",
+        "print(type(edad))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ItuNLUsWcsF6",
+        "outputId": "9d8dc2a4-41eb-4d64-d2bd-c03f4cd63ef0"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "altura = 1.75\n",
+        "print(type(altura))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KEF9i3nBc5IA",
+        "outputId": "b4edb3f7-b554-4ff5-81fe-d993091d6538"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "aprobado = False\n",
+        "print(type(aprobado))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jg6__ZzYc-Ls",
+        "outputId": "d809ec36-affd-49d9-dd50-5cef54d5c1cb"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'bool'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(5>3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Io8P1ZIsdEli",
+        "outputId": "cbe6f4d4-ec32-4b65-a50e-287eb99c1aac"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"hola\" == \"hola\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8avT04iXdNGS",
+        "outputId": "b5ee7a08-4ac2-4c50-cf70-6c3c597c34c0"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "edad = 25\n",
+        "texto = str(edad)\n",
+        "print(texto, type(texto))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SvZppsaqdRlQ",
+        "outputId": "b0e6bbfe-7050-45a4-afff-3fd8b487e415"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "25 <class 'str'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "decimal = 5.99\n",
+        "entero = int(decimal)\n",
+        "print(entero)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i9amDwGUdfbG",
+        "outputId": "48909541-5d37-4ef4-9fca-310d05c78233"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(\"42\")\n",
+        "print(num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qJypyPVRdob5",
+        "outputId": "9919972a-1b19-419a-98ec-86ef5b2cf758"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "42\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = float(\"3.14\")\n",
+        "print(num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tjxezsE8dwdo",
+        "outputId": "f9979c10-46cb-47ea-b5e8-93aa1ee69988"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3.14\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1 = \"10\"\n",
+        "n2 = \"20\"\n",
+        "print(int(n1) + int(n2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "x8sESU9Ld2FV",
+        "outputId": "50be6dbc-ddff-4ce2-d099-101fcdeb7ad1"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre = \"Ana\"\n",
+        "apellido = \"Pérez\"\n",
+        "print(nombre + \" \" + apellido)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "f80iMoRAeFk4",
+        "outputId": "793160c3-4fce-4582-c9ed-58545789a090"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ana Pérez\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "frase = \"Hola mundo\"\n",
+        "print(\"mundo\" in frase) #Función in: busca una palabra dentro de una frase (\"palabra a buscar\" - función \"in\" - variable que contiene la frase, devuelve bool"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ANOq0dydeX0g",
+        "outputId": "0cde4d63-d1a1-4726-efd4-2423b7ab7152"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "estado = True\n",
+        "print(str(estado))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Pq6zeZs8ec6y",
+        "outputId": "18a72e4b-01bc-4528-a625-48dc6f499aab"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(bool(0)) #Convierte números al bool, \"0\" devuelve \"False\", el resto \"True\"\n",
+        "print(bool(5))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8P3h_zKEe9_u",
+        "outputId": "4cf44fde-7c4d-4650-8df9-b0a4ed37a74c"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre = \"Carlos\"\n",
+        "edad = 28\n",
+        "print(nombre + \" tiene \" + str(edad) + \" años\") #Concatena números \"int\" o \"float\" con texto convirtiendo el número a str"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YegICwDKfEP6",
+        "outputId": "d11bb0bb-448e-4c76-b5fa-3ea5eb10ba14"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Carlos tiene 28 años\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "edad = 20\n",
+        "es_mayor = edad >= 18\n",
+        "print(\"Mayor de edad:\", es_mayor) #Concatena str con bool"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w8jFH3yofyyS",
+        "outputId": "10b38d32-caf5-4532-9b0e-56d707c927e7"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mayor de edad: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "respuesta = input(\"Eestudias? (s/n):\")\n",
+        "print(respuesta == \"s\") #compara el contenido de \"input\" con un texto, devuelve bool"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "04UhvuPggPtx",
+        "outputId": "50c9c053-7323-4aa5-b20c-5ba69711ed70"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Eestudias? (s/n):s\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = input(\"Número 1:\")\n",
+        "b = input(\"Número 2:\")\n",
+        "print(int(a) + int(b)) #Suma valores numéricos que pide input, devuelve otro valor númerico (int o float)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "H6BjJXUOhJWv",
+        "outputId": "31344219-4ff1-437a-9328-5d7c14d7f6bf"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Número 1:1\n",
+            "Número 2:1\n",
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = float(input(\"Escribe un número:\")) #Convierte a float el número que solicita input\n",
+        "print(n * 2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cg5GAw49hg0n",
+        "outputId": "5c4b1af7-f91f-46a6-825f-be151cbcd58e"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Escribe un número:1\n",
+            "2.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "edad = int(input(\"Edad:\")) #convierte a int el valor numérico que solicita input\n",
+        "print(\"Es par:\", edad % 2 == 0) #Concatena el \"str\" con la comparativa de la operación indicada (bool)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EuaKrlN1h6xy",
+        "outputId": "8a1895ab-c2c7-4aa6-9a69-bcb48a52dbe1"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Edad:2\n",
+            "Es par: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nombre = input(\"Nombre:\") #input pide un str\n",
+        "print(\"HOLA\", nombre.upper()) #concatena str con una función upper() (devuelve mayúsculas)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Hi0dYGw7iMLj",
+        "outputId": "9688a30d-36c0-4c92-c3de-4ab4d8bea2f5"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nombre:ángel\n",
+            "HOLA ÁNGEL\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "texto = input(\"Escribe algo: \") #input pide str\n",
+        "print(len(texto)) #función \"len(\"variable\")\": cuenta los caracteres que contiene el texto de la variable, cuenta tambien espacios"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vErIoaTZi84b",
+        "outputId": "42b48f56-3334-43ed-a194-f59592be4042"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Escribe algo: Ángel REséndiz Plata\n",
+            "20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "texto = input(\"Texto: \") #función input solicita str\n",
+        "print(texto.startswith(\"A\")) #función \".startswith(\"Letra o frase\"): identifica si la str de la variable inicia con la palabra o frase indicada, reconoce acentos y mayosculas o minúsculas; devuelve bool"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OZg1vd0yjTHy",
+        "outputId": "45d3df81-be04-4ebd-abb5-3371c45fa198"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Texto: Angel\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "producto = \"camisa\"\n",
+        "precio = 199.99\n",
+        "type(precio)\n",
+        "print(\"El precio de la\", producto, \"es\", precio) #Símbolo \",\": Concatena texto con un valor numérico sin necesidad de convertirlo a str\n",
+        "print(type(precio))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BY-UWyYDkIZD",
+        "outputId": "a690c05f-b185-4cc5-9e7f-cd61a468e5eb"
+      },
+      "execution_count": 50,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "El precio de la camisa es 199.99\n",
+            "<class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "oNZUCILnlS5E"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
